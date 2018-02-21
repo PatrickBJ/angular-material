@@ -1,6 +1,8 @@
 FROM node:latest
 COPY package.json ./
 RUN npm i && mkdir /sms
+RUN npm i -g @angular/cli --unsafe
+
 WORKDIR /sms
 ENTRYPOINT  cp -R /node_modules /sms  && npm start 
 EXPOSE 4200 49153
