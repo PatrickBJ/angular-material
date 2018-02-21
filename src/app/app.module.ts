@@ -1,11 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { MaterialModule } from './material.module';
-import { FormsModule } from '@angular/forms';
+
+const routes: Routes = [
+  { path: 'source', loadChildren: './company-source/company-source.module#CompanySourceModule' },
+  { path: '**', redirectTo: 'source' }
+];
 
 @NgModule({
   declarations: [
@@ -14,8 +17,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule,
-    FormsModule
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
