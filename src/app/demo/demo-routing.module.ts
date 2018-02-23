@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
 import { ButtonsComponent } from './buttons/buttons.component';
 import { FlexboxComponent } from './flexbox/flexbox.component';
 
@@ -14,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class CompanySourceRoutingModule { }
+export class DemoRoutingModule { }

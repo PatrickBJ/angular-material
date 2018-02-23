@@ -5,9 +5,10 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 
+
 const routes: Routes = [
-  { path: 'source', loadChildren: './company-source/company-source.module#CompanySourceModule' },
-  { path: '**', redirectTo: 'source' }
+  { path: 'demo', loadChildren: './demo/demo.module#DemoModule' },
+  { path: '**', redirectTo: 'demo' }
 ];
 
 @NgModule({
