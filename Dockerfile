@@ -12,3 +12,4 @@ EXPOSE 4200 49153
 
 ## To run the image
 # docker run -it -p "4200:4200" -p "49153:49153" -v $(pwd):/sms sms-manager
+# docker run -it -p "4200:4200" -p "49153:49153" -v ${pwd}:/sms sms-manager
