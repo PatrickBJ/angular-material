@@ -2,5 +2,8 @@ after a command:
 sudo chown -R hader: .
 
 
-ng g m company-source --routing --dry-run 
-ng g c company-source/buttons --dry-run --no-spec --inline-style --inline-template
+ng g m demo --routing --dry-run 
+ng g m contactmanager
+
+ng g c contactmanager/contactmanager-app --flat --no-spec --inline-style --inline-template --dry-run 
+
