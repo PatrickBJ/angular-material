@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('sms-manager App', () => {
+describe('angular-material App', () => {
   let page: AppPage;
 
   beforeEach(() => {
