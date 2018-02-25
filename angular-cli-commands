@@ -7,3 +7,6 @@ ng g m contactmanager
 
 ng g c contactmanager/contactmanager-app --flat --no-spec --inline-style --inline-template --dry-run 
 
+ng g s contactmanager/services/user --no-spec --dry-run
+
+ng g class contactmanager/models/user

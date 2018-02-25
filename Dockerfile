@@ -11,5 +11,5 @@ EXPOSE 4200 49153
 # docker build --force-rm -t angular-material .
 
 ## To run the image
-# docker run -it -p "4200:4200" -p "49153:49153" -v $(pwd):/app angular-material
+# docker run -it  --rm --user "$(id -u):$(id -g)" -p "4200:4200" -p "49153:49153" -v $(pwd):/app angular-material
 # docker run -it -p "4200:4200" -p "49153:49153" -v ${pwd}:/app angular-material
