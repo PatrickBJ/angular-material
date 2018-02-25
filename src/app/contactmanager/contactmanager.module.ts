@@ -11,6 +11,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { ContactManagerAppComponent } from './contactmanager-app.component';
 import { UserService } from './services/user.service';
 import { HttpClientModule } from '@angular/common/http';
+import { NotesComponent } from './components/notes/notes.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,6 @@ const routes: Routes = [
   providers: [
     UserService
   ],
-  declarations: [ContactManagerAppComponent, ToolbarComponent, MainContentComponent, SidenavComponent]
+  declarations: [ContactManagerAppComponent, ToolbarComponent, MainContentComponent, SidenavComponent, NotesComponent]
 })
 export class ContactManagerModule { }
