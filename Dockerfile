@@ -8,7 +8,7 @@ ENTRYPOINT  cp -R /node_modules /app  && npm start
 EXPOSE 4200 49153
 
 ## To build the image without docker-compose
-# docker build --force-rm -t angular-material .
+# docker build --force-rm -t hader/angular-material .
 
 ## To run the image without docker-compose
-# docker run -it  --rm --user "$(id -u):$(id -g)" -p "4200:4200" -p "49153:49153" -v $(pwd):/app angular-material
+# docker run -it  --rm --user "$(id -u):$(id -g)" -p "4200:4200" -p "49153:49153" -v $(pwd):/app hader/angular-material
