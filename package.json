@@ -31,8 +31,7 @@
     "zone.js": "^0.8.19",
     "@angular/cli": "~1.7.0",
     "@angular/compiler-cli": "^5.2.0",
-    "typescript": "~2.5.3",
-    "enhanced-resolve": "^4.0.0"
+    "typescript": "~2.5.3"
   },
   "devDependencies": {
     "@angular/cli": "~1.7.0",
@@ -52,7 +51,8 @@
     "protractor": "~5.1.2",
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
-    "typescript": "~2.5.3"
+    "typescript": "~2.5.3",
+    "enhanced-resolve": "^4.0.0"
   },
   "engines": {
     "node": "9.5.0",
